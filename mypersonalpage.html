@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
+    <title>Elisa Pierrot - Fashion CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -15,33 +16,48 @@
         header {
             background-color: #000;
             color: #fff;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+            margin: 10px 0 0;
         }
         .container {
             width: 80%;
             margin: auto;
-            padding: 20px;
+            padding: 20px 0;
         }
         .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 20px;
             border-bottom: 2px solid #000;
             padding-bottom: 10px;
-            margin-bottom: 20px;
         }
-        .cv {
+        .cv-section, .projects-section {
             margin-bottom: 50px;
         }
-        .cv h2, .projects h2 {
-            font-size: 24px;
+        .cv-section h2, .projects-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
             margin-bottom: 10px;
         }
-        .cv p {
+        .cv-section p, .cv-section ul, .projects-section p {
             margin: 5px 0;
+            line-height: 1.6;
         }
-        .projects img {
+        .projects-section img {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .footer {
             background-color: #000;
@@ -52,44 +68,98 @@
             bottom: 0;
             width: 100%;
         }
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+        a:hover {
+            border-bottom: 2px solid #000;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Personal Page</h1>
+    <h1>Elisa Pierrot</h1>
+    <p>Junior Client & CRM Specialist</p>
 </header>
 
 <div class="container">
-    <section class="cv">
+    <section class="cv-section">
         <h2 class="section-title">About Me</h2>
-        <p>With a strategic and creative vision, I pay great attention to detail and am fully committed to creating meaningful client relationships. Adaptable and results-oriented, I thrive in dynamic environments by taking a proactive and collaborative approach to my work.</p>
+        <p>With a strategic and creative vision, I pay great attention to detail and am fully committed to creating meaningful customer relationships. Adaptable and results-oriented, I thrive in dynamic environments by taking a proactive and collaborative approach to my work.</p>
     </section>
 
-    <section class="cv">
+    <section class="cv-section">
         <h2 class="section-title">My CV</h2>
-        <p><strong>Name:</strong> [Your Name]</p>
-        <p><strong>Email:</strong> [Your Email]</p>
-        <p><strong>Current Position:</strong> Junior Client & CRM Specialist</p>
-        <p><strong>Main Responsibilities:</strong></p>
+        <p><strong>Name:</strong> Elisa Pierrot</p>
+        <p><strong>Email:</strong> <a href="mailto:elisapierrot@yahoo.fr">elisapierrot@yahoo.fr</a></p>
+        <p><strong>Phone:</strong> 06 83 88 72 01</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/elisapierrot">www.linkedin.com/in/elisapierrot</a></p>
+        
+        <h3>Current Position:</h3>
+        <p><strong>Junior Client & CRM Specialist, Maison Margiela, Paris</strong></p>
         <ul>
             <li>Driving and expanding the clienteling app, developing innovative training materials.</li>
-            <li>Designing analytical dashboards to track CRM KPIs, thus optimizing customer strategy.</li>
+            <li>Designing analytical dashboards to track CRM KPIs, optimizing customer strategy.</li>
             <li>Enhancing omnichannel sales operations by developing and maintaining tools and processes.</li>
             <li>Ensuring customer experience through effective management of queries via the Client Care service.</li>
         </ul>
-        <p><strong>Education:</strong></p>
+
+        <h3>Experience:</h3>
         <ul>
-            <li>CYU UFR Cergy Paris University</li>
-            <li>Master's Degree in LCI Languages and International Trade English-Chinese 2021-2023 with honors.</li>
+            <li><strong>Assistant Client Engagement and Trade Marketing, Giorgio Armani, Paris</strong> (April-September 2023)</li>
+            <li><strong>Assistant Client Engagement, Maison Margiela, Paris</strong> (October 2023 - March 2024)</li>
+            <li><strong>Sales Advisor, Givenchy, Paris</strong> (June-August 2022)</li>
+            <li><strong>Sales Advisor, Rouje, Paris</strong> (July-September 2021)</li>
+            <li><strong>Marketing and Communication Assistant, Renaissance Upcycling, Paris</strong> (October-December 2021)</li>
         </ul>
-        <p><strong>Office Skills:</strong> Proficiency in Microsoft Office Suite, SAP BusinessObjects Business Intelligence, Power BI, Photo and Video Editing, HTML, CSS, Adobe Campaign.</p>
-        <p><strong>Skills:</strong> Analytical Thinking, Work Ethic, Adaptability, Creativity, Public Relations, Interpersonal Communication, Project Management, Working in Multicultural Environments.</p>
-        <p><strong>Languages:</strong> French C2, English C1 (TOEIC: 950), Chinese B2, German A2</p>
+
+        <h3>Education:</h3>
+        <ul>
+            <li><strong>CYU UFR Cergy Paris University</strong>: Master's in Languages and International Trade English-Chinese 2021-2023 with honors</li>
+            <li><strong>INALCO (Institut National des Langues et Cultures Orientales)</strong>: Bachelor's in Chinese and International Trade 2018-2021</li>
+            <li><strong>National Sun Yat Sen University, Kaohsiung, Taiwan</strong>: Summer school July-August 2019</li>
+            <li><strong>Lycée Jean-Henri Lambert</strong>: Baccalaureate 2018 Literary: Chinese, Art & English with honors</li>
+        </ul>
+
+        <h3>Skills:</h3>
+        <ul>
+            <li>Analytical Thinking</li>
+            <li>Work Ethic</li>
+            <li>Adaptability</li>
+            <li>Creativity</li>
+            <li>Public Relations</li>
+            <li>Interpersonal Communication</li>
+            <li>Project Management</li>
+            <li>Multicultural Environment</li>
+            <li>CRM Management</li>
+        </ul>
+
+        <h3>Technical Skills:</h3>
+        <ul>
+            <li>Proficiency in Microsoft Office Suite</li>
+            <li>SAP BusinessObjects</li>
+            <li>Power BI</li>
+            <li>Photo and Video Editing</li>
+            <li>HTML/CSS</li>
+            <li>Adobe Campaign</li>
+        </ul>
+
+        <h3>Languages:</h3>
+        <ul>
+            <li>French (C2)</li>
+            <li>English (C1, TOEIC: 950)</li>
+            <li>Chinese (B2)</li>
+            <li>German (A2)</li>
+        </ul>
     </section>
 
-    <section class="projects">
+    <section class="projects-section">
         <h2 class="section-title">Completed Projects</h2>
+        <p>Here are some snapshots of my work in trade marketing and clienteling:</p>
         <img src="project1.jpg" alt="Project 1">
         <img src="project2.jpg" alt="Project 2">
         <img src="project3.jpg" alt="Project 3">
@@ -97,7 +167,7 @@
 </div>
 
 <footer class="footer">
-    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2024 Elisa Pierrot. All rights reserved.</p>
 </footer>
 
 </body>
